@@ -10,3 +10,9 @@ out/
 # OS files
 .DS_Store
 Thumbs.db
+
+# PyCharm
+.idea/
+.venv/
+__pycache__/
+*.pyc
