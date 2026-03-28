@@ -16,14 +16,14 @@ public class MaxHeap {
 
         int curIdx = items.size()-1;
 
-        while(curIdx != 1){ //root node 전에 닿을 때까지
+        while(curIdx != 1){ //root node 바로 전까지
 
-            // 부모 노드랑 비교해서
+            // 부모 노드 인덱스
             int parentIdx = curIdx / 2;
 
-            // 현재 노드가 부모노드보다 크다면
+            // 현재 노드의 값이 부모노드의 값보다 크다면
             if (items.get(curIdx) > items.get(parentIdx)){
-
+                // 서로 자리를 바꿔준다.
                 int temp = items.get(curIdx);
                 items.set(curIdx,items.get(parentIdx));
                 items.set(parentIdx,temp);
